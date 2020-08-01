@@ -1358,10 +1358,13 @@ a {
     }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 620px) {
     .about__item-box {
         display: block;
     }
+}
+
+@media screen and (max-width: 520px) {
     .mobile .mobile__photo {
         display: none;
     }
