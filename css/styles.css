@@ -208,7 +208,7 @@ a {
 
 .header .wrapper .header__left .logo-box {
     position: relative;
-    top: 30px;
+    top: 25px;
 }
 
 .header .wrapper .header__left .logo-box .span {
@@ -287,11 +287,15 @@ a {
         cursor: pointer;
     }
     .header .wrapper .header__left .Logo-text {
-        font-size: 20px;
+        font-size: 30px;
     }
     .header .wrapper .header__left .header__logo {
         height: 50px;
         width: 50px;
+    }
+    .header .wrapper .header__left .logo-box {
+        position: relative;
+        top: 38px;
     }
 }
 
