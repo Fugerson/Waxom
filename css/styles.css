@@ -207,9 +207,8 @@ a {
 }
 
 .header .wrapper .header__left .logo-box {
-    width: 200px;
-    height: 70px;
     position: relative;
+    top: 30px;
 }
 
 .header .wrapper .header__left .logo-box .span {
@@ -224,7 +223,7 @@ a {
     width: 60px;
 }
 
-.header .wrapper .header__left span {
+.header .wrapper .header__left .Logo-text {
     font-family: 'Raleway Regular', sans-serif;
     font-size: 34px;
     color: white;
@@ -237,6 +236,14 @@ a {
     float: right;
 }
 
+.header .wrapper .header__right .minWidth-menu {
+    display: none;
+}
+
+.header .wrapper .header__right .minWidth-menu .to-be-changed {
+    display: none;
+}
+
 .header .wrapper .header__right .header__ul {
     align-self: center;
     display: flex;
@@ -246,7 +253,7 @@ a {
 
 .header .wrapper .header__right .header__ul .header-li {
     color: white;
-    padding: 10px;
+    padding: 7px;
     font-size: 14px;
 }
 
@@ -266,6 +273,28 @@ a {
     height: 25px;
 }
 
+@media screen and (max-width: 720px) {
+    .header .wrapper .header__right .header__ul {
+        /* background-image: url(/img/bgtop.jpg); */
+        /* content: "212212"; */
+        display: none;
+    }
+    .header .wrapper .header__right .minWidth-menu {
+        display: block;
+        width: 50px;
+        height: 50px;
+        align-self: center;
+        cursor: pointer;
+    }
+    .header .wrapper .header__left .Logo-text {
+        font-size: 20px;
+    }
+    .header .wrapper .header__left .header__logo {
+        height: 50px;
+        width: 50px;
+    }
+}
+
 .slider::before {
     content: "";
     height: 1030px;
@@ -282,7 +311,6 @@ a {
 }
 
 .slider .wrapper {
-    /* position: static; */
     height: 1030px;
 }
 
@@ -1248,18 +1276,6 @@ a {
     height: 100px;
 }
 
-@media screen and (max-width: 650px) {
-    /* .waxom .waxom-box {
-        display: block;
-    }
-    .header .wrapper .header__right {
-        display: block;
-    }
-    .header .wrapper {
-        display: block;
-    } */
-}
-
 .footer {
     background-color: #111111;
     min-height: 110px;
@@ -1349,9 +1365,6 @@ a {
 @media screen and (max-width: 1100px) {
     .header__ul {
         max-width: 350px;
-    }
-    .header .wrapper .header__right {
-        display: block;
     }
     .header .wrapper {
         display: block;
